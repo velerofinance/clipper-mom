@@ -162,7 +162,7 @@ contract ClipperMomTest is DSTest {
         caller = new MomCaller(mom);
         authority = new SimpleAuthority(address(caller));
         mom.setAuthority(address(authority));
-        clip = new MockClipper("ETH");
+        clip = new MockClipper("VLX");
         clip.rely(address(mom));
         anyone = new Anyone(mom);
         hevm.warp(1000);
